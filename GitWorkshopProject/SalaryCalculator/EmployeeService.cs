@@ -22,7 +22,7 @@ namespace SalaryCalculator
                     break;
                 case EmployeeType.SeniorEngineer:
                 case EmployeeType.Manager:
-                    factor = 1.5m;
+                    factor = 2m;
                     break
                 case EmployeeType.SeniorManager:
                 case EmployeeType.Expert:
@@ -31,6 +31,7 @@ namespace SalaryCalculator
                 default:
                     break;
             }
+
             var salary = BASIC_SALARY * years * factor;
 
             return salary;
